@@ -7,7 +7,10 @@ header{
 	
 }
 header h1{
-
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 3px;
+	font-size: 45px;
+	margin-left: 25px;
 }
 .inline{
 	display: inline;
@@ -16,11 +19,18 @@ header h1{
 	position: relative;
 	top: -20px;
 }
-#navbar a{
+#navbar2{
+	display: block;
+	width: 500px;
+	position: relative;
 	float: right;
+}
+#navbar a{
+	/*float: right;*/
 	margin-right: 20px;
 	text-decoration: none;
 	color: #0D0D0D;
+	font-family: 'Roboto', sans-serif;
 }
 #navbar a:hover{
 	text-decoration: none;
