@@ -4,6 +4,10 @@ body{
 	padding-bottom: 0px;
 	color: rgb(13, 13, 13)
 }
+a{
+	text-decoration: none;
+	color: currentColor;
+}
 header{
 	
 }
@@ -52,10 +56,10 @@ header h1{
 #content1 p{
 	font-size: 70px;
 
-	letter-spacing: 10px;
+	letter-spacing: 15px;
 	font-family: 'Roboto', sans-serif;
 	color: rgba(13, 13, 13,0.8);
-	font-weight: bold;
+	font-weight: ;
 }
 #content1 p span{
 	font-weight: normal;
