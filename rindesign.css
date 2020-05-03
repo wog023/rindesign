@@ -114,12 +114,16 @@ header h1{
 }
 .showDiv .showDivContent{
 	width: 100%;
-	flex-grow: 9;
+	flex-grow: 30;
 	display: flex;
+	justify-content: center;
 
 }
-.showDiv .showDivContent img{
+.showDiv .showDivContent .imgBox{
 	margin: auto;
-	width: 800px;
 	position: relative;
+	width: 600px;
+}
+.showDiv .showDivContent img{
+	display: block;
 }
