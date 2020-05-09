@@ -4,10 +4,10 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: #F2F2F2;
+	background-color: #f6f6f6;
 	padding: 20px;
 	padding-bottom: 0px;
-	color: rgb(13, 13, 13)
+	color: rgb(13, 13, 13);
 }
 a{
 	text-decoration: none;
