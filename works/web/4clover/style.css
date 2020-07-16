@@ -15,83 +15,69 @@
 }
 body{
 	background-color: var(--color-B);
+	color: var(--color-C)
 }
 .container {
   display: grid;
-  grid-template-rows: 100vh 195px 2345px 235px 160px;
+  grid-template-rows: 50px 450px 3185px 225px 160px;x;
 }
-.hero{
-	height: 100vh;
-	width: 100vw;
-	grid-row: 1/2;
-	background-image: url(images/hero.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	display: grid;
-	grid-template-rows: 1fr 1fr 15% 1fr 1fr;
-	align-items: center;
-	justify-items: center;
-}
-.hero h1{
-	color: var(--color-D);
-	grid-row: 3/4;
-	font-size: 45px;
-}
-.hero h1 span{
-	color: var(--color-C)
-}
-.hero p{
-	grid-row: 4/5;
-	color: var(--color-C);
-	font-size: 14px;
-}
-.hero .arrow{
-	grid-row: 5/6;
-}
-.arrow img{
-	
-	width: 32px;
-}
-main{
-	grid-row: 3/4;
+header{
 	background-color: var(--color-E);
-	display: flex;
+	display: inline-flex;
+align-items: center;
+justify-content: space-between;
 }
-main .inner{
-	margin: auto;
-	width: 325px;
-	height: 2000px;
-	/*border: 1px solid #fff;*/
-	display: grid;
-	grid-template-rows: repeat(4,1fr);
-	grid-gap: 150px;
+.logo {
+	width: 70px;
+	height: 25px;
 }
-.inner .homeBox{
-	/*border: 1px solid #fff;*/
+header .logo img{
+	width: 70px;
+	height: 25px;
+}
+header .hamburger{
+	width: 20px;
+	height: 15px;
+
+}
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.info{
+	height: 40%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	width: 100%;
 }
-.inner .homeBox h2{
-	font-size: 35px;
-	color: var(--color-C);
+.info h2 {
+  font-size: 35px;
 }
-.inner .homeBox img{
-	width: 300px;
-	height: 185px;
+
+.info p {
+  font-size: 14px;
+}
+
+.frontImgBox {
+  width: 80%;
+  border: 1px solid #fff;
+  height: 40%;
+}
+.frontImg{
+	width: 100%;
+	height: 100%;
+	background-image: url(../../../images/web.png);
+	background-size: cover;
+	background-position: center;
 }
 .capsules {
 	display: flex;
-	width: 100%;
+	width: 80%;
 	justify-content: space-between;
-}
-.ui .capsules{
-	width: 40%;
-}
-.pixel .capsules{
-	justify-content: center;
 }
 .capsules p {
 	color: var(--color-C);
@@ -100,17 +86,90 @@ main .inner{
 	border-radius: 30px;
 	padding: 5px 15px;
 }
-
-.inner .homeBox .content{
-	color: var(--color-C);
-	font-size: 12px;
-	display: block;
-	width: 216px;
-	height: 55px;
-	word-spacing: 10px;
-	text-align: center;
-	line-height: 27px;
+main{
+	grid-row: 3/4;
+	background-color: var(--color-E);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+.linkBox {
+  height: calc(100vh - 50px - 450px);
+  display: flex;
+width: 100%;
+}
+.linkBox p {
+  margin: auto;
+  width: 145px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--color-D);
+  border-radius: 45px;
+}
+.linkBox p a{
+	color: var(--color-C)
+}
+.inner{
+	width: 280px;
+	height: 2780px;
+	border: 1px solid #fff;
+	display: grid;
+	grid-template-rows: repeat(7,1fr);
+	grid-row-gap: 100px;
+}
+.foreword{
+	font-size: 16px;
+}
+.box{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+.processImgBox{
+	width: 100%;
+	height: 235px;
+	border: 1px solid #fff;
+	overflow: hidden;
+}
+.processImg{
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.process1{
+	background-image: url(process1.jpg);
+	width: 120%;
+	left: -14%;
+	height: 100%;
+}
+.process2{
+	background-image: url(process2.png);
+	width: ;
+	left: ;
+	height: ;
+}
+.process3{
+	background-image: url(process3.png);
+	width: ;
+	left: ;
+	height: ;
+}
+.process4{
+	background-image: url(process4.png);
+	width: ;
+	left: ;
+	height: ;
+}
+.box p{
+	font-size: 14px;
+}
+.box h3{
+	font-size: 20px;
+	color: var(--color-D)
+}
+
 footer{
 	grid-row: 5/6;
 	background-color: var(--color-E);
