@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" >
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/contact.css">
 
 
 
@@ -12,56 +13,22 @@
 </head>
 <body>
 	<div class="container">
-		<div class="hero">
-			<h1>Rin <span>Design</span></h1>
-			<p>123456789</p>
-			<a href="#main" class="arrow"><img src="images/arrow2.svg" alt="" ></a>
-		</div>
-		<div></div>
-		<main id="main">
-			<div class="inner">
-				<div class="homeBox web">
-					<h2>Web Design</h2>
-					<img src="images/web.png" alt="">
-					<div class="capsules">
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JavaScript</p>
-						<p>RWD</p>
-					</div>
-					<p class="content">使用網頁程式以及其他常見的框架、外掛<br>製作出可實際運作的成品</p>
-				</div>
-				<div class="homeBox redesign">
-					<h2>Redesign</h2>
-					<img src="images/redesign.png" alt="">
-					<div class="capsules">
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JavaScript</p>
-						<p>RWD</p>
-					</div>
-					<p class="content">分析現有網站，改善UX及UI，<br>畫出設計圖後以網頁程式製作</p>
-				</div>
-				<div class="homeBox ui">
-					<h2>UI Design</h2>
-					<img src="images/ui.png" alt="">
-					<div class="capsules">
-						<p>XD</p>
-						<p>PS</p>
-					</div>
-					<p class="content">使用adobe XD設計網頁及各式UI原型<br>包含網頁設計及Daily UI</p>
-				</div>
-				<div class="homeBox pixel">
-					<h2>Pixel Art</h2>
-					<img src="" alt="">
-					<div class="capsules">
-						<p>PS</p>
-					</div>
-					<p class="content">以PS進行像素畫pixel art鼠繪創作掛</p>
-				</div>
+		<header>
+			<a href="index.html" class="logo">
+				<img src="images/logo.svg" alt="">
+			</a>
+			<img class="hamburger" src="images/hamburger.svg">
+				
+			
+		</header>
+
+		<main>
+			<div class="mailBox">
+				<img src="images/mail.png" alt="" id="mail" class="mail">
+				<img src="images/mailcontent.jpg" alt="" id="mailcontent" class="mailcontent none">
 			</div>
 		</main>
-		<div></div>
+
 		<footer>
 			<p>©2020 Rin design</p>
 		</footer>
@@ -93,5 +60,15 @@
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js.js"></script>
+	<script>
+		$('#mail').click(function () {
+			$('#mail').addClass('none')
+			$('#mailcontent').removeClass('none')
+		})
+
+
+
+
+	</script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+.container {
+	height: 100vh;
+  display: grid;
+  grid-template-rows: 50px calc(100vh - 50px) 160px;
+}
+
+
+main {
+  display: flex;
+}
+
+.mailBox {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.mail {
+  width: min(70%,70vh);
+  margin: auto;
+  transition: 0.2s ease-in;
+  box-shadow: 3px 5px 5px var(--color-E);
+  cursor: pointer;
+}
+.mail:hover {
+    position: relative;
+    /*top: -10px;*/
+    box-shadow: 3px 5px 5px var(--color-E);
+    transform: translateY(-10px)scale(1.05);
+}
+.mailcontent{
+    width: min(70%,70vh);
+  margin: auto;
+  box-shadow: 3px 5px 5px var(--color-E);
+
+}
+.none{
+   display: none;
+}
+
+
+
+
+footer{
+	grid-row: 3/4;
+	background-color: var(--color-E);
+	display: flex;
+}
+footer p{
+	color: var(--color-C);
+	font-size: 14px;
+	margin: auto;
+}

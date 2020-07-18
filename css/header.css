@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Microsoft Jhenghei;
+	text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+:root{
+	--color-A: #393E46;/*淺*/
+	--color-B: #222831;/*深*/
+	--color-C: #EEEEEE;/*米白*/
+	--color-D: #00ADB5;/*綠*/
+	--color-E: #111418;/*深底*/
+}
+body{
+	background-color: var(--color-B);
+}
+
+header{
+	background-color: var(--color-E);
+	display: inline-flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo {
+	width: 70px;
+	height: 25px;
+}
+header .logo img{
+	width: 70px;
+	height: 25px;
+}
+header .hamburger{
+	width: 20px;
+	height: 15px;
+
+}
