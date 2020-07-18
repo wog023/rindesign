@@ -28,11 +28,28 @@ main {
     box-shadow: 3px 5px 5px var(--color-E);
     transform: translateY(-10px)scale(1.05);
 }
-.mailcontent{
-    width: min(70%,70vh);
+.mailcontent {
+    width: max(80%,320px);
   margin: auto;
   box-shadow: 3px 5px 5px var(--color-E);
-
+    background-color: var(--color-A);
+    border: 3px solid var(--color-D);
+    height: 60vh;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /*! font-size: 30px; */
+}
+.mailcontent p {
+  font-size: 18px;
+  color: var(--color-D);
+}
+.mailcontent h6 {
+  font-size: 18px;
+  color: var(--color-C);
+  text-decoration: underline var(--color-D) 2px;
 }
 .none{
    display: none;
