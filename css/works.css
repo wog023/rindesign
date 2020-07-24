@@ -72,15 +72,17 @@ main{
   color: var(--color-C);
   font-size: 18px;
   display: flex;
-position: relative;
-align-items: center;
-justify-content: center;
+	position: relative;
+	/*align-items: center;
+	justify-content: center;*/
 }
 .chooseLine{
-	width: 55px;
-height: 3px;
-background-color: var(--color-D);
-position: absolute;
+	width: 120%;
+	height: 3px;
+	background-color: var(--color-D);
+	position: absolute;
+	top: 50%;
+	left: calc(-20% / 2)
 }
 .front h2 {
   color: var(--color-C);
@@ -128,6 +130,7 @@ font-size: 12px;
   background-position: center;
   /*background-size: cover;*/
   background-size: 110%;
+  background-repeat: no-repeat;
 }
 
 
@@ -143,6 +146,15 @@ footer p{
 }
 
 
+/****************************loading*************************************/
+.loading{
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--color-E);
+	z-index: 3;
+	position: fixed;
+	display: none;
+}
 
 
 

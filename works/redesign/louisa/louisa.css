@@ -1,0 +1,99 @@
+
+.frontImg{
+	background-image: url(louisa.png);
+	background-size: 100%;
+background-repeat: no-repeat;
+}
+.processImgBox{
+		display: flex;
+	border: none;
+}
+.processImg{
+	background-color: var(--color-B);
+	border: 2px solid var(--color-B);
+}
+
+.box4{
+
+}
+.process1 {
+	background-image: url(process1.png);
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	left: 0;
+
+}
+.process2{
+	background-image: url(process2.png);
+
+}
+.process3{
+	background-image: url(process3.png);
+	width: max(330px,60%);
+	margin: 30px auto;
+	border: 2px solid var(--color-B);
+}
+.process4{
+	background-image: url(process4.png);
+	width: max(56%,330px);
+	margin: auto;
+}
+
+
+.finalImg {
+	width: 100%;
+	height: 100%;
+overflow: scroll;
+}
+
+.finalImg img {
+	width: 100%;
+}
+
+
+
+
+
+@media (min-width: 576px) {
+
+	.frontImg {
+		width: 75%;
+	}
+	.inner {
+		grid-template-rows: 215px repeat(4,1fr) 500px 200px;
+		height: 2780px;
+	}
+
+}
+@media (min-width: 768px) {
+
+	.frontImg {
+		width: 65%;
+	}
+	.inner {
+		grid-template-rows: 215px repeat(4,1fr) 400px 200px;
+		height: 2780px;
+	}
+
+
+}
+@media (min-width: 992px) {
+	.container {
+	  grid-template-rows: 70px calc(100vh - 70px) 3150px 225px 160px;
+	}
+	.foreword {
+		width: min(100%,1050px);
+	}
+
+
+
+}
+@media (min-width: 1200px) {
+
+	.frontImg{
+		width: min(55%,725px);
+	}
+
+
+}

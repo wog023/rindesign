@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" >
 	<link rel="stylesheet" href="css/works.css">
+	<link rel="stylesheet" href="works/choose.css">
 
 
 
@@ -23,15 +24,19 @@
 		<div class="front">
 			<h2>Works</h2>
 			<div class="typeBox">
-				<h3>Web<div class="chooseLine"></div></h3>
-				<h3>Redesign</h3>
-				<h3>UI</h3>
-				<h3>Pixel Art</h3>
+				<h3 class="web">Web<div class="chooseLine visible"></div>
+				</h3>
+				<h3 class="redesign">Redesign<div class="chooseLine"></div>
+				</h3>
+				<h3 class="ui">UI<div class="chooseLine"></div>
+				</h3>
+				<h3 class="pixel">Pixel Art<div class="chooseLine"></div>
+				</h3>
 			</div>
 		</div>
 		<main>
 			<div class="inner">
-				<div class="workBox">
+				<div class="workBox workBox1">
 					<a href="works/web/4clover.html">
 						<div class="title">
 							<h4>4CloveR</h4>
@@ -42,7 +47,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="workBox">
+				<div class="workBox workBox2">
 					<a href="works/web/4clover.html">
 						<div class="title">
 							<h4>4CloveR</h4>
@@ -53,7 +58,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="workBox">
+				<div class="workBox workBox3">
 					<a href="works/web/4clover.html">
 						<div class="title">
 							<h4>4CloveR</h4>
@@ -64,7 +69,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="workBox">
+				<div class="workBox workBox4">
 					<a href="works/web/4clover.html">
 						<div class="title">
 							<h4>4CloveR</h4>
@@ -75,13 +80,13 @@
 						</div>
 					</a>
 				</div>
-				<div class="workBox">
+				<div class="workBox workBox5" id="abc">
 					<a href="works/web/4clover.html">
 						<div class="title">
 							<h4>4CloveR</h4>
 							<p>music player</p>
 						</div>
-						<div class="workImgBox">
+						<div class="workImgBox6">
 							<div class="workImg"></div>
 						</div>
 					</a>
@@ -101,13 +106,11 @@
 
 
 
-
-
-
-
-
+		<div class="loading"></div>
 
 	</div>
+	
+
 	
 
 
@@ -124,6 +127,12 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js.js"></script>
+	<script type="text/javascript" src="works/works.js"></script>
+	
+	<script src="works/web.js"></script>
+	<script src="works/redesign.js"></script>
+	<script src="works/ui.js"></script>
+	<script src="works/pixel.js"></script>
+	
 </body>
 </html>

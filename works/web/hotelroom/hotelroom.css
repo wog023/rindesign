@@ -1,0 +1,65 @@
+
+.frontImg{
+	background-image: url(hotelroom.png);
+	background-size: 100%;
+background-repeat: no-repeat;
+}
+.processImg{
+	background-color: var(--color-B)
+}
+
+.box4{
+	display: none;
+}
+.process1{
+	background-image: url(wireframe.png);
+	background-size: 88%;
+	background-position: center;
+	width: 100%;
+	left: 0;
+}
+.process2{
+	background-image: url(process2.png);
+	background-size: 95%;
+	background-position: center;
+}
+.finalImg {
+  width: 100%;
+  height: 100%;
+   border: 2px solid var(--color-B);
+  border-radius: 3px;
+}
+
+.finalImg img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+@media (min-width: 576px) {
+
+	.frontImg {
+		width: 75%;
+	}
+
+
+}
+@media (min-width: 768px) {
+
+	.frontImg {
+		width: 65%;
+	}
+
+
+}
+@media (min-width: 992px) {
+
+	.foreword {
+		width: min(100%,1050px);
+	}
+
+
+}

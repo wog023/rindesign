@@ -2,10 +2,13 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Microsoft Jhenghei;
+	font-family:'Arial','Noto Sans TC', 'Microsoft Jhenghei';
 	text-decoration: none;
 	scroll-behavior: smooth;
 }
+/*
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+*/
 
 :root{
 	--color-A: #393E46;/*淺*/
@@ -37,3 +40,13 @@ header .hamburger{
 	height: 15px;
 
 }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
