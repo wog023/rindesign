@@ -32,15 +32,18 @@ $(document).ready(function(){
 			$('.workBox4 .title p').text('website')
 			$('.workBox4 .workImg').css('background-image','url(works/redesign/louisa.png)')
 		}
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////
+	
 
 
 
 
 
 $('.redesign').click(function(){
-	$('.workImg').css('background-size','100%')
+	$('.workImg').css({'background-size':'100%','background-color':'transparent'})
+	$('.cover').css('display','none')
+	$('.container').css({'overflow':'unset'})
+
 	workBox1()
 	workBox2()
 	workBox3()

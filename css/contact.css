@@ -70,6 +70,56 @@ footer p{
 	margin: auto;
 }
 
+/****************************loading**************************************/
+.loading{
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-E);
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  color: var(--color-D)
+}
+.typeBox{
+  /*width: 40%;*/
+  height: 10%;
+  margin: auto;
+  font-size: 40px
+
+}
+.typeBox p{   
+    overflow: auto;
+    width: 0%;
+    word-wrap: normal;
+    height: 46px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 1s linear;
+    animation-fill-mode:forwards;
+}
+.type{
+
+}
+#mos{
+  word-spacing: 9px;
+  animation-fill-mode:forwards;
+}
+#contact {
+    width: 0%;
+    letter-spacing: 27px;
+    animation-delay: 1s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes type{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}

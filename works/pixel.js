@@ -39,11 +39,17 @@ $(document).ready(function(){
 
 
 $('.pixel').click(function(){
+	type = 'pixel'
+
 	$('.workImg').css('background-size','100%')
+	$('.cover').css('display','none')
+	$('.container').css({'overflow':'unset'})
+
 	workBox1()
 	workBox2()
 	workBox3()
 	workBox4()
+	console.log(type)
 })
 
 

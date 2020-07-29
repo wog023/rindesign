@@ -1,3 +1,5 @@
+var type
+
 
 $(document).ready(function(){
 
@@ -33,7 +35,12 @@ $(document).ready(function(){
 
 
 $('.web').click(function(){
-	$('.workImg').css('background-size','100%')
+	type = 'web'
+
+	$('.workImg').css({'background-size':'100%','background-color':'transparent'})
+	$('.cover').css('display','none')
+	$('.container').css({'overflow':'unset'})
+	
 	workBox1()
 	workBox2()
 	workBox3()

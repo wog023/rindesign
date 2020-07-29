@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 	function workBox1(){
-			$('.workBox1 a').attr('href','#')
+			$('.workBox1 a').attr('href','#workBox1')
 			$('.workBox1 .title h4').text('Sell Phone')
 			$('.workBox1 .title p').text('website')
 			$('.workBox1 .workImg').css('background-image','url(works/ui/sellphone.png)')
@@ -26,6 +26,28 @@ $(document).ready(function(){
 			$('.workBox4 .workImg').css('background-image','url(works/ui/calculator.png)')
 			$('.workBox4 .workImg').css('background-size','73%')
 		}
+////////////////////////////////////////////////////////////////////////////////////////
+	function ui1(){
+		$('.workBox1').click(function(){
+			if(type==='ui'){
+				$('.container').css({'overflow':'hidden'})
+				$('.cover').css('display','block')
+				$('.cover img').attr('src','works/ui/ui1.jpg')
+			}
+		})
+	}
+	
+	function coverOff(){
+	
+			$('.cover').click(function(){
+			$('.cover').css('display','none')
+			$('.container').css({'overflow':'unset'})
+		})
+		}
+
+
+
+		
 
 
 
@@ -34,11 +56,19 @@ $(document).ready(function(){
 
 
 $('.ui').click(function(){
-	$('.workImg').css('background-size','100%')
+	type = 'ui'
+
+	$('.workImg').css({'background-size':'100%','background-color':'transparent'})
 	workBox1()
 	workBox2()
 	workBox3()
 	workBox4()
+
+	
+	ui1()
+	
+	console.log(type)
+	coverOff()
 })
 
 
