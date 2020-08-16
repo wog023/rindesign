@@ -1,0 +1,307 @@
+
+#about{
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	overflow: hidden;
+}
+.about-container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding-top: 52px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: 100vw;
+    grid-gap: 100px;
+}
+
+
+
+
+.about-container h2 {
+    grid-row: 1/2;
+    font-size: 40px;
+    letter-spacing: 17px;
+    color: var(--color-green);
+    text-indent: 17px;
+}
+
+
+.photo-box {
+    width: 225px;
+    height: 225px;
+    border: 5px solid var(--color-purple);
+    border-radius: 50%;
+}
+
+/* 行內 #5 | file:///E:/rindesign-circle/index.html# */
+
+.photo-box {
+  width: 225px;
+  height: 225px;
+  border: 5px solid var(--color-purple);
+  border-radius: 50%;
+}
+
+.about-main {
+  display: grid;
+  grid-template-rows: repeat(6,min-content);
+  grid-template-columns: 100%;
+  grid-gap: 100px;
+  width: 100vw;
+  justify-items: center;
+}
+.about-main h6 {
+  font-size: 16px;
+  color: var(--color-purple);
+}
+.about-main p{
+	  color: var(--color-black);
+  font-size: 14px;
+}
+.about-words,.portfolio{
+	width: max(280px,75%);
+	margin-left: 10%;	
+}
+.intro {
+  grid-row: 1/2;
+  display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+	width: max(290px,77%);
+}
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+.intro-content h3 {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  color: var(--color-purple);
+}
+.intro-content p {
+
+  text-indent: 28px;
+}
+
+
+
+.about-words {
+  grid-row: 3/4;
+  display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.portfolio {
+  grid-row: 5/6;
+}
+.portfolio-btn {
+  font-size: 12px !important;
+  width: 100%;
+  height: 33px;
+  color: #fff !important;
+  line-height: 33px;
+  text-align: center;
+  justify-self: center;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.portfolio-btn a {
+  background-color: var(--color-purple);
+  width: 97px;
+  display: block;
+  border-radius: 19px;
+  margin-left: -13.5%;
+  box-shadow: 3px 3px 4px #857688;
+}
+
+.gap-dot {
+  height: 11px;
+  width: 77px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.gap-dot p {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.gap-dot p:nth-of-type(1){
+	background-color: var(--color-red)
+}
+.gap-dot p:nth-of-type(2){
+	background-color: var(--color-blue)
+}
+.gap-dot p:nth-of-type(3){
+	background-color: var(--color-green)
+}
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.about-container h2 {
+		font-size: 45px;
+	}
+	.intro-content h3 {
+		font-size: 28px;
+	}
+	.photo-box {
+		width: 250px;
+		height: 250px;
+	}
+	.about-main p {
+		font-size: 17px;
+	}
+	.about-main h6 {
+		font-size: 20px;
+	}
+	.about-words, .portfolio {
+		margin-left: 7%;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+
+	  .intro-content h3 {
+	    font-size: 32px;
+	  }
+	  .about-main p {
+	    font-size: 19px;
+	    grid-gap: 120px;
+	  }
+	  .about-words, .portfolio {
+	    margin-left: 6%;
+	    width: 73%;
+	  }
+	  .about-main h6 {
+	    font-size: 22px;
+	  }
+	.intro-content p {
+	  text-indent: 38px;
+	}
+	.intro {
+	  width: min(590px,77%);
+	}
+	.about-words {
+		gap: 100px;
+	}
+	.portfolio-btn {
+		font-size: 14px !important;
+		height: 36px;
+		margin-top: 40px;
+	}
+	.portfolio-btn a {
+		width: 108px;
+		margin-left: -8%;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.about-container {
+		padding-top: 100px;
+	}
+	.about-main h6 {
+		font-size: 25px;
+	}
+	.intro {
+		width: 65%;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.intro-content {
+		width: 50%;
+		align-items: start;
+		text-indent: unset;
+	}
+	.intro-content p {
+		text-indent: unset;
+	}
+	.about-words, .portfolio {
+		margin-left: 0;
+		width: 65%;
+	}
+	.portfolio-btn {
+		font-size: 19px !important;
+		height: 38px;
+		letter-spacing: 1px;
+		line-height: 38px;
+	}
+	.portfolio-btn a {
+		margin-left: 0;
+		width: 130px;
+	}
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px)  {
+
+	  .about-container h2 {
+	    font-size: 60px;
+	  }
+	  .photo-box {
+	    width: 312px;
+	    height: 312px;
+	  }
+	.about-container {
+	  grid-gap: 200px;
+	}
+
+	.about-main {
+	  grid-gap: 193px;
+	}
+
+	  .intro-content h3 {
+	    font-size: 45px;
+	  }
+	  .about-words {
+	    gap: 134px;
+	  }
+	  .about-main p {
+	    font-size: 23px;
+	  }
+	  .portfolio-btn {
+	    margin-top: 105px;
+	  }
+
+	  .intro-content p {
+	    font-size: 22px;
+	  }
+	  .about-main h6 {
+	    /* font-size: 25px; */
+	    font-size: 30px;
+	  }
+	.gap-dot {
+	  height: 14px;
+	  width: 95px;
+	}
+	.gap-dot p {
+	  width: 14px;
+	  height: 14px;
+	}
+
+	.intro-content {
+		width: 50%;
+	}
+	.intro {
+		width: min(65%,945px);
+	}
+}
