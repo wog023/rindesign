@@ -7,7 +7,7 @@ function about(){
 	$('.container').addClass('container-footer')
 	$('#home,#contact,#works').hide()
 	$('#about').show()	
-	$('.sidebar').show()
+	$('.sidebar,.top').show()
 	sideClear()
 	$('.side-about p').addClass('side-about-now')
 	// setTimeout(function(){

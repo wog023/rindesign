@@ -92,7 +92,7 @@ $('.navi>p:nth-child(12)').hover(function(){
 
 function home(){
 		$('.container').removeClass('container-footer')
-		$('#works,#contact,#about,.sidebar').hide()
+		$('#works,#contact,#about,.sidebar,.top').hide()
 		$('#home').show()
 		clear()
 		// $('#navi').toggle().toggle()

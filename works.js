@@ -5,13 +5,13 @@
 
 var web = [
 	{},
-	{name:'4CloveR',type:'music plater',img:'url(images/4clover.png)'},
-	{name:'Hotelroom',type:'website',img:'url(images/hotelroom2.png)'},
-	{name:'Rin Design',type:'website',img:'url(images/comingsoon.png)'}
+	{name:'4CloveR',type:'music plater',img:'url(images/4clover.png)',link:'https://wog023.github.io/4clover'},
+	{name:'Hotelroom',type:'website',img:'url(images/hotelroom2.png)',link:'https://wog023.github.io/hotelroom'},
+	{name:'Rin Design',type:'website',img:'url(images/comingsoon.png)',link:'https://wog023.github.io/rindesign'}
 ]
 var redesign = [
 	{},
-	{name:'路易莎咖啡 Redesign',type:'website',img:'url(images/louisa1.png)'},
+	{name:'路易莎咖啡 Redesign',type:'website',img:'url(images/louisa1.png)',link:'https://wog023.github.io/Redesign-louisacoffee'},
 	{name:'碳佐麻里 Redesign',type:'website',img:'url(images/tan.png)'},
 	{name:'-',type:'-',img:'url(images/comingsoon.png)'}
 ]
@@ -27,11 +27,15 @@ var pixel = [
 	{name:'鬼斯',type:'pixel art (50*50px)',img:'url(images/鬼斯.png)'},
 	{name:'風に薫る夏の記憶',type:'pixel art',img:'url(images/kaze.png)'}
 ]
+$('.work-block .launch a').click(function(){this.target = "_blank";})
 function webShow(){
+	
 	for(var i=1;i<=3;i++){
 		$('.work-block'+i+' .pic').css('background-image',web[i].img)
 		$('.work-block'+i+' .name').text(web[i].name) 
-		$('.work-block'+i+' .type').text(web[i].type) 
+		$('.work-block'+i+' .type').text(web[i].type)
+		$('.work-block'+i+' .launch a').attr('href',web[i].link)
+		
 	}
 }
 function redesignShow(){
@@ -39,6 +43,8 @@ function redesignShow(){
 		$('.work-block'+i+' .pic').css('background-image',redesign[i].img)
 		$('.work-block'+i+' .name').text(redesign[i].name) 
 		$('.work-block'+i+' .type').text(redesign[i].type) 
+		$('.work-block'+i+' .launch a').attr('href',redesign[i].link)
+		
 	}
 }
 function uiShow(){
@@ -46,6 +52,8 @@ function uiShow(){
 		$('.work-block'+i+' .pic').css('background-image',ui[i].img)
 		$('.work-block'+i+' .name').text(ui[i].name) 
 		$('.work-block'+i+' .type').text(ui[i].type) 
+		$('.work-block'+i+' .launch a').attr('href',ui[i].link)
+		
 	}
 }
 function pixelShow(){
@@ -53,6 +61,8 @@ function pixelShow(){
 		$('.work-block'+i+' .pic').css('background-image',pixel[i].img)
 		$('.work-block'+i+' .name').text(pixel[i].name) 
 		$('.work-block'+i+' .type').text(pixel[i].type) 
+		$('.work-block'+i+' .launch a').attr('href',pixel[i].link)
+	
 	}
 }
 $('.web').click(function(){
@@ -104,7 +114,7 @@ webShow()
 		$('.container').addClass('container-footer')
 		$('#home,#contact,#about').hide()
 		$('#works').show()
-		$('.sidebar').show()
+		$('.sidebar,.top').show()
 		sideClear()
 		$('.side-works p').addClass('side-works-now')
 		now = 'works'

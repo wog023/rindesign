@@ -15,9 +15,9 @@ $(document).ready(function(){
 		sidePC()
 	}
 
-home()
+// home()
 // works()
-// about()
+about()
 // contact()
 
 

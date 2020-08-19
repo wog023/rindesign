@@ -68,12 +68,16 @@ main {
     overflow: hidden;
 }
 .pic {
-  width: 100%;
-  height: 100%;
-  /*background-size: contain;*/
-  background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+	  width: 100%;
+	  height: 100%;
+	  /*background-size: contain;*/
+	  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.info-block{
+	width: 100%;
+	display: flex;
 }
 .info {
   height: 138px;
@@ -83,7 +87,8 @@ background-position: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  	width: 100%;
+  	width: 85%;
+	margin: auto;
 }
 
 .info h4 {
@@ -101,6 +106,7 @@ background-position: center;
   color: #fff !important;
   line-height: 40px;
   border-radius: 35px;
+  height: 41px;
 }
 
 
@@ -171,12 +177,20 @@ background-position: center;
 	.work-block:nth-of-type(even) {
 	  flex-direction: row-reverse;
 	}
+	.pic-block {
+		border: 5px solid var(--color-purple);
+	}
+	.info-block{
+		width: 350px;
+		height: 350px;
+		display: flex;
+	}
 	.info {
-	  width: 335px;
-	  height: 180px;
+	  height: 160px;
+	  margin: auto;
 	}
 	.info h4 {
-		font-size: 45px;
+		font-size: 38px;
 	}
 	.info p {
 		line-height: 46px;
@@ -184,6 +198,7 @@ background-position: center;
 	.launch {
 		line-height: 40px !important;
 		font-size: 25px !important;
+		height: 43px;
 	}
 
 
@@ -202,7 +217,7 @@ background-position: center;
 		font-size: 60px;
 	}
 	.navbar {
-	  width: min(100%,980px);
+	  width: min(100%,1230px);
 	}
 	.navbar p {
 		font-size: 30px;
@@ -217,13 +232,17 @@ background-position: center;
 	    width: 450px;
 	    height: 450px;
 	}
+	.info-block{
+	    height: 450px;
+	    width: 450px;
+	}
 	.info {
-	  width: 450px;
-	  height: 210px;
+	  width: 380px;
+		height: 175px;
 	  justify-content: space-evenly;
 	}
 	.info h4 {
-		font-size: 50px;
+		font-size: 42px;
 	}
 	.info p {
 		font-size: 22px;
