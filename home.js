@@ -89,12 +89,26 @@ $('.navi>p:nth-child(12)').hover(function(){
 	$(navAbout).removeClass('nav-about-hover')
 })
 /////////////////////////////////////////////////////////////////////////////
+function homeLoad(){
+		$('.home-load').css('z-index','2')
+		$('.home-load').toggleClass('ani')
+		setTimeout(function(){
+			$('.home-load').css('z-index','-1')
+			$('.home-load').toggleClass('ani')
+		},1400)	
+}
 
+
+
+/////////////////////////////////////////////////////////////////
 function home(){
-		$('.container').removeClass('container-footer')
-		$('#works,#contact,#about,.sidebar,.top').hide()
-		$('#home').show()
 		clear()
+		$('.container').removeClass('container-footer')
+			$('#works,#contact,#about,.sidebar,.top').fadeOut(800)
+			$('#home').fadeIn(800)
+		now = 'home'
+		
+		// homeLoad()
 		// $('#navi').toggle().toggle()
 
 	}

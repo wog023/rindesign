@@ -12,20 +12,20 @@ var web = [
 var redesign = [
 	{},
 	{name:'路易莎咖啡 Redesign',type:'website',img:'url(images/louisa1.png)',link:'https://wog023.github.io/Redesign-louisacoffee'},
-	{name:'碳佐麻里 Redesign',type:'website',img:'url(images/tan.png)'},
-	{name:'-',type:'-',img:'url(images/comingsoon.png)'}
+	{name:'碳佐麻里 Redesign',type:'website',img:'url(images/tan.png)',link:'#'},
+	{name:'-',type:'-',img:'url(images/comingsoon.png)',link:'#'}
 ]
 var ui = [
 	{},
-	{name:'Sell Phone',type:'website',img:'url(images/sellphone2.jpg)'},
-	{name:'Checkout',type:'webpage',img:'url(images/4clover.png)'},
-	{name:'-',type:'-',img:'url(images/comingsoon.png)'}
+	{name:'Sell Phone',type:'website',img:'url(images/sellphone2.jpg)',link:'#'},
+	{name:'Checkout',type:'webpage',img:'url(images/4clover.png)',link:'#'},
+	{name:'-',type:'-',img:'url(images/comingsoon.png)',link:'#'}
 ]
 var pixel = [
 	{},
-	{name:'呆呆獸',type:'pixel art (50*50px)',img:'url(images/呆呆獸.png)'},
-	{name:'鬼斯',type:'pixel art (50*50px)',img:'url(images/鬼斯.png)'},
-	{name:'風に薫る夏の記憶',type:'pixel art',img:'url(images/kaze.png)'}
+	{name:'呆呆獸',type:'pixel art (50*50px)',img:'url(images/呆呆獸.png)',link:'#'},
+	{name:'鬼斯',type:'pixel art (50*50px)',img:'url(images/鬼斯.png)',link:'#'},
+	{name:'風に薫る夏の記憶',type:'pixel art',img:'url(images/kaze.png)',link:'#'}
 ]
 $('.work-block .launch a').click(function(){this.target = "_blank";})
 function webShow(){
@@ -112,9 +112,9 @@ webShow()
 ///////////////////////////////////////////////////////////////////
 	function works(){
 		$('.container').addClass('container-footer')
-		$('#home,#contact,#about').hide()
-		$('#works').show()
-		$('.sidebar,.top').show()
+		$('#home,#contact,#about').fadeOut(800)
+		$('#works').fadeIn(800)
+		$('.sidebar,.top').fadeIn(800)
 		sideClear()
 		$('.side-works p').addClass('side-works-now')
 		now = 'works'
