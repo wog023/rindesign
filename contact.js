@@ -1,5 +1,11 @@
 function copy() {
 	$('.copy').click(function(){
+
+		$(this).addClass('copy-click')
+		setTimeout(function(){
+			$('.copy').removeClass('copy-click')
+		},200)
+
 		  $('body').append('<textarea id="clip_area">asps135794@gmail.com</textarea>');  
 		  var clip_area = $('#clip_area');
 		  clip_area.text();
@@ -10,7 +16,11 @@ function copy() {
 }
 function cross(){
 	$('.cross img').click(function(){
-		
+		$(this).css('opacity','0')
+		setTimeout(function(){
+			$('.cross img').css('opacity','1')
+		},300)
+
 		$('.ball').css('animation-play-state','running')
 		setTimeout(function(){
 			$('.contact-content').hide()

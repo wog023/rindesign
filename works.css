@@ -53,11 +53,11 @@ main {
     padding: 60px 0;
 }
 .work-block {
-    width: 283px;
+    	width: 283px;
       display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  align-items: center;
 }
 .pic-block {
     width: 283px;
@@ -267,4 +267,31 @@ main {
 	.launch {
 		font-size: 25px !important;
 	}
+}
+/************************show***********************************************/
+.show {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  background-color: #000000d9;
+  overflow-y: scroll;
+  display: flex;
+  display: none;
+}
+.showImg {
+  width: 80%;
+  margin: auto;
+  overflow-y: scroll;
+}
+.showImg img {
+	width: 100%;
+	background-color: #fff;
+}
+.container-fixed{
+	/*height: 100vw;*/
+	/*overflow: visible;*/
+	overflow: hidden;
+
 }

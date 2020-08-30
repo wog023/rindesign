@@ -56,6 +56,14 @@
 	box-shadow: 3px 3px 4px #185699;
   grid-row: 6/7;
   align-self: baseline;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.copy-click{
+	top: 2px;
+	position: relative;
+	left: 2px;
+	box-shadow: 0px 0px 4px #185699;
 }
 
 .cross {
@@ -67,6 +75,7 @@
 .cross img {
   width: 30px;
   margin: auto;
+  transition: 0.2s;
 }
 
 
