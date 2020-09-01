@@ -283,7 +283,6 @@ main {
 .showImg {
   width: 80%;
   margin: auto;
-  overflow-y: scroll;
 }
 .showImg img {
 	width: 100%;
