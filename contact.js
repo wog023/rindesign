@@ -24,10 +24,10 @@ function cross(){
 		$('.ball').css('animation-play-state','running')
 		setTimeout(function(){
 			$('.contact-content').hide()
-		},1200)
+		},800)
 		setTimeout(function(){
 			$('#contact').hide()
-		},3000)
+		},2000)
 		// setTimeout(function(){
 		// 	$('.side-contact').removeClass('side-click')
 		// },100)
@@ -39,7 +39,7 @@ function animationStop(){
 	$('.contact-content').show()
 	setTimeout(function(){
 		$('.ball').css('animation-play-state','paused')
-	},3000)
+	},2000)
 }
 
 
