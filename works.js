@@ -15,7 +15,7 @@ var redesign = [
 var ui = [
 	{},
 	{name:'Sell Phone',type:'website',img:'url(images/sellphone2.jpg)',link:'javascript:void(0)',src:'images/sellphone-full.jpg'},
-	{name:'Checkout',type:'webpage',img:'url(images/4clover.png)',link:'javascript:void(0)',src:'images/checkout.png'},
+	{name:'Checkout',type:'webpage',img:'url(images/checkout.png)',link:'javascript:void(0)',src:'images/checkout.png'},
 	{name:'404 Page',type:'web page',img:'url(images/404page.png)',link:'javascript:void(0)',src:'images/404page.png'}
 ]
 var pixel = [
