@@ -1,0 +1,127 @@
+.loading {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+display: flex;
+background-color: var(--color-bg);
+	z-index: 4;
+}
+.load-box {
+  margin: auto;
+  width: 90%;
+text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  color: transparent;
+}
+.load{
+	border-radius: 50%;
+	background-color: transparent;
+	width: 25px;
+	height: 25px;
+	animation:loading-round 1.6s ease-in-out forwards;
+}
+
+.load3 {
+	margin-right: 30px;
+}
+.load1{
+	animation-delay: 0.4s;
+}
+.load2{
+	animation-delay: 0.55s;
+}
+.load3{
+	animation-delay: 0.7s;
+}
+.load4{
+	animation-delay: 0.85s;
+}
+.load5{
+	animation-delay: 1s;
+}
+.load6{
+	animation-delay: 1.15s;
+}
+.load7{
+	animation-delay: 1.3s;
+}
+.load8{
+	animation-delay: 1.45s;
+}
+.load9{
+	animation-delay: 1.6s;
+}
+
+@keyframes loading-round{
+	0{
+		background-color: transparent;
+	}
+	7%{
+		background-color: var(--color-purple);
+	}
+	93%{
+		background-color: var(--color-purple);
+		color: transparent;
+	}
+	100%{
+		background-color: transparent;
+		color: var(--color-purple);
+
+	}
+	
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.load-box {
+		 width: 455px;
+	  font-size: 30px;
+	}
+	.load {
+		width: 30px;
+		height: 30px;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.load-box {
+		width: 575px;
+		font-size: 35px;
+	}
+	.load {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.load-box {
+		width: 600px;
+		font-size: 45px;
+	}
+	.load {
+		width: 45px;
+		height: 45px;
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.load-box {
+	  width: 670px;
+		font-size: 55px;
+	}
+	.load{
+		width: 55px;
+		height: 55px;
+	}
+}

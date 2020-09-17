@@ -18,7 +18,9 @@ home()
 // works()
 // about()
 // contact()
-
+		setTimeout(function(){
+			$('.loading').fadeOut(700)
+		},3500)
 
 
 	
